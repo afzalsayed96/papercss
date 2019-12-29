@@ -1,5 +1,5 @@
 body {
-    background-image: url("/img/geometry2.png")
+    background-image: linear-gradient(to right, #E9F0F8 0%, #DEE7F4 100%);
 }
 #top {
     max-width: 1440px;

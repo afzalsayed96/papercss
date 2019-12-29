@@ -21,7 +21,7 @@ Inspired by [Imperfect Buttons](https://codepen.io/tmrDevelops/pen/VeRvKX)
 
 #### Code:
 
-```html
+```
 <p>Inspired by <a href="https://codepen.io/tmrDevelops/pen/VeRvKX" target="_blank">Imperfect Buttons</a></p>
 <button class="btn-large">Large</button>
 <button>Default</button>
@@ -46,7 +46,7 @@ Inspired by [Imperfect Buttons](https://codepen.io/tmrDevelops/pen/VeRvKX)
 
 #### Code:
 
-```html
+```
 <input type="button" class="paper-btn btn-primary" value="Primary"/>
 <input type="button" class="btn-secondary" value="Secondary"/>
 <button class="btn-success">Success</button>

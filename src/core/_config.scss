@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Neucha|Patrick+Hand+SC');
 
 // Set theme colors
-$primary: #41403e !default;
+$primary: #33476B !default;
 $secondary: #0071de !default;
 
 $success: #86a361 !default;
@@ -64,7 +64,7 @@ $colors: (primary, $primary, $primary-light, $primary-text),
 // Font settings
 $global-font-size: 20px !default;
 $header-font: 'Patrick Hand SC' !default;
-$body-font: 'Neucha' !default;
+$body-font: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif !default;
 $font-color: $primary !default;
 
 // Responsive breakpoints

@@ -1,12 +1,12 @@
 button,
 .paper-btn,
 [type='button'] {
-  @include border-style();
-  @include shadow();
+  // @include border-style();
+  // @include shadow();
   @include transition();
   align-self: center;
-  background: transparent;
-  border: 2px solid $primary;
+  // background: transparent;
+  // border: 2px solid $primary;
   color: $primary;
   cursor: pointer;
   display: inline-block;
@@ -22,13 +22,13 @@ button,
   }
 
   &.btn-large {
-    @include shadow(large);
+    // @include shadow(large);
     font-size: 2rem;
     padding: 1rem;
   }
 
   &.btn-small {
-    @include shadow(small);
+    // @include shadow(small);
     font-size: 0.75rem;
     padding: 0.5rem;
   }
@@ -42,28 +42,33 @@ button,
     @include shadow(hover);
   }
 
-  &:focus {
-    border: 2px solid $secondary;
-    box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
-  }
+  // &:focus {
+  //   border: 2px solid $secondary;
+  //   box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+  // }
 
-  &:active {
-    border-color: hsla(0, 0%, 0%, 0.2);
-    transition: none;
-  }
+  // &:active {
+  //   border-color: hsla(0, 0%, 0%, 0.2);
+  //   transition: none;
+  // }
 
   &.disabled,
   &[disabled] {
     cursor: not-allowed;
     opacity: 0.5;
   }
+  background-color: #E4ECF6;
+  box-shadow: 5px 5px 10px #ccdbe8, 1px 1px 2px #ccdbe8, -6px -6px 15px rgba(255,255,255,0.9), -1px -1px 3px 1px rgba(255,255,255,0.9);
+  border-radius: 0.75em;
+  padding: 0.6em;
+  border: none;
 }
 
 a {
-  background-image: linear-gradient(5deg, transparent 65%, $secondary 80%, transparent 90%), linear-gradient(165deg, transparent 5%, $secondary 15%, transparent 25%), linear-gradient(165deg, transparent 45%, $secondary 55%, transparent 65%), linear-gradient(15deg, transparent 25%, $secondary 35%, transparent 50%);
-  background-position: 0 90%;
-  background-repeat: repeat-x;
-  background-size: 4px 3px;
+  // background-image: linear-gradient(5deg, transparent 65%, $secondary 80%, transparent 90%), linear-gradient(165deg, transparent 5%, $secondary 15%, transparent 25%), linear-gradient(165deg, transparent 45%, $secondary 55%, transparent 65%), linear-gradient(15deg, transparent 25%, $secondary 35%, transparent 50%);
+  // background-position: 0 90%;
+  // background-repeat: repeat-x;
+  // background-size: 4px 3px;
   text-decoration: none;
 
   &:visited {
@@ -73,24 +78,24 @@ a {
 }
 
 
-@each $colorName, $color, $color-light, $color-text in $colors {
-  .alert-#{$colorName} {
-    background-color: $color-light;
-    border-color: $color;
-    color: $color;
-  }
+// @each $colorName, $color, $color-light, $color-text in $colors {
+//   .alert-#{$colorName} {
+//     background-color: $color-light;
+//     border-color: $color;
+//     color: $color;
+//   }
 
-  button.btn-#{$colorName},
-  .paper-btn.btn-#{$colorName},
-  [type='button'].btn-#{$colorName} {
-    background-color: $color-light;
-    border-color: $color;
-    color: $color-text;
+//   button.btn-#{$colorName},
+//   .paper-btn.btn-#{$colorName},
+//   [type='button'].btn-#{$colorName} {
+//     background-color: $color-light;
+//     border-color: $color;
+//     color: $color-text;
 
-    &:hover {
-      &:active {
-        background-color: darken($color-light, 10%);
-      }
-    }
-  }
-}
+//     &:hover {
+//       &:active {
+//         background-color: darken($color-light, 10%);
+//       }
+//     }
+//   }
+// }
